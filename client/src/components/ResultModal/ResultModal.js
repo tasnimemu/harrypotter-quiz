@@ -24,10 +24,10 @@ const ResultModal = ({ show, onClose, result }) => (
     >
       <CardActionArea>
         <CardMedia
-          image="https://material-ui.com/static/images/cards/contemplative-reptile.jpg"
+          image="https://wi.wallpapertip.com/wsimgs/42-424222_hogwarts-in-the-snow-hogwarts-castle-at-christmas.jpg"
           style={{
             width: '100%',
-            height: 140,
+            height: 220,
           }}
         />
         <CardContent>

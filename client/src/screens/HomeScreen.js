@@ -7,7 +7,7 @@ const HomeScreen = () => (
   <div>
     <AppBar position="static">
       <Toolbar>
-        <Typography variant="h6">Quiz App</Typography>
+        <Typography variant="h4">Harry Potter Quiz</Typography>
       </Toolbar>
     </AppBar>
     <QuizForm />

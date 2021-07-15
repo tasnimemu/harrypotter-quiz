@@ -1,43 +1,116 @@
 [
   {
-    "question": "If soccer is called football in England, what is American football called in England?",
+    "id": "1",
+    "question": "What house was Draco Malfoy in?",
     "options": [
-      "American football",
-      "Combball",
-      "Handball",
-      "Touchdown"
+      "Gryffindor",
+      "Hufflepuff",
+      "Slytherin",
+      "Ravenclaw"
     ],
-    "answer": "American football"
+    "answer": "Slytherin"
   },
   {
-    "question": "What is the largest country in the world?",
+    "id": "2",
+    "question": "How many Weasley children were there?",
     "options": [
-      "Russia",
-      "Canada",
-      "China",
-      "United States"
-    ],
-    "answer": "Russia"
-  },
-  {
-    "question": "An organic compound is considered an alcohol if it has what functional group?",
-    "options": [
-      "Hydroxyl",
-      "Carbonyl",
-      "Alkyl",
-      "Aldehyde"
-    ],
-    "answer": "Hydroxyl"
-  },
-  {
-    "question": "What is the 100th digit of Pi?",
-    "options": [
-      "9",
-      "4",
+      "3",
       "7",
-      "2"
+      "10",
+      "6"
     ],
-    "answer": "9"
+    "answer": "7"
+  },
+  {
+    "id": "3",
+    "question": "What platform does the Hogwarts Express depart from?",
+    "options": [
+      "Platform Ten",
+      "Platform Five and a Half",
+      "Platform Nine and One-Quarter",
+      "Platform Nine and Three-Quarters"
+    ],
+    "answer": "Platform Nine and Three-Quarters"
+  },
+  {
+    "id": "4",
+    "question": "What is the name of Ron's pet rat?",
+    "options": [
+      "Babs",
+      "Scabbers",
+      "Travers",
+      "Babbity"
+    ],
+    "answer": "Scabbers"
+  },
+  {
+    "id": "5",
+    "question": "Who greets the first-years once they get off the train?",
+    "options": [
+      "Hagrid",
+      "McGonagall",
+      "Dumbledore",
+      "Snape"
+    ],
+    "answer": "Hagrid"
+  },
+  {
+    "id": "6",
+    "question": "What color is the building of Gringotts bank?",
+    "options": [
+      "Snowy white",
+      "Bright red",
+      "Dark grey",
+      "Multicolored"
+    ],
+    "answer": "Snowy white"
+  },
+  {
+    "id": "7",
+    "question": "Where do students buy their wands?",
+    "options": [
+      "Broomstix",
+      "Flourish and Blotts",
+      "The Leaky Cauldron",
+      "Ollivanders"
+    ],
+    "answer": "Ollivanders"
+  },
+  {
+    "id": "8",
+    "question": "What are the Three Unforgiveable Curses?",
+    "options": [
+      "Expecto Patronum, Accio, Expelliarmus",
+      "Avada Kedavra, Crucio, Imperio",
+      "Lacarnus Inflamari, Wingardium Leviosa, Alohomora",
+      "Aberto, Bombarda Maxima, Cantis"
+    ],
+    "answer": "Avada Kedavra, Crucio, Imperio"
+  },
+  {
+    "id": "9",
+    "question": "Who opened the Chamber of Secrets?",
+    "options": [
+      "Neville Longbottom",
+      "Albus Dumbledore",
+      "Hermione Granger",
+      "Ginny Weasley"
+    ],
+    "answer": "Ginny Weasley"
+  },
+  {
+    "id": "10",
+    "question": "What was the address of the Dursley's?",
+    "options": [
+      "1273 Brick Lane",
+      "4 Privet Drive",
+      "12 Grimmauld Place",
+      "1 Diagon Alley"
+    ],
+    "answer": "4 Privet Drive"
   }
+
+
+
 ]
 

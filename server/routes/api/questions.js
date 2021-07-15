@@ -40,10 +40,15 @@ const shuffleArray = require('../../utils/shuffle');
  * 
  */
 router.get('/', (req, res) => {
-  // Remove the lines below and write your implementation
-  res.status(500).send({
-    error: 'not implemented'
-  })
+  let newQuestions = [];
+  for(let i = 0; i < Questions.length; i++){
+    let current = { question: Questions[i].question, 
+                    options: Questions[i].options,
+                    id: Questions[i].id };
+    newQuestions.push(current);
+  }
+  
+  res.send(newQuestions)
 })
 
 /**
@@ -57,10 +62,7 @@ router.get('/', (req, res) => {
  * }
  */
 router.get('/count', (req, res) => {
-  // Remove the lines below and write your implementation
-  res.status(500).send({
-    error: 'not implemented'
-  })
+  res.send('10');
 })
 
 /**
@@ -78,10 +80,16 @@ router.get('/count', (req, res) => {
  * }
  */
 router.get('/:qId', (req, res) => {
-  // Remove the lines below and write your implementation
-  res.status(500).send({
-    error: 'not implemented'
-  })
+  let entry;
+  for(let i = 0; i < Questions.length; i++){
+    if(req.params.qId == Questions[i].id){
+      entry = { question: Questions[i].question, 
+                options: Questions[i].options,
+                id: Questions[i].id};
+    }
+  }
+
+  res.send(entry)
 })
 
 
@@ -107,10 +115,26 @@ router.get('/:qId', (req, res) => {
  * }
  */
 router.post('/result', (req, res) => {
-  // Remove the lines below and write your implementation
-  res.status(500).send({
-    error: 'not implemented'
-  })
+  client_ans = req.body;
+  let score = 0;
+  let total = 0; 
+  for(let i = 1; i <= Questions.length; i++){
+    if(client_ans[i] === Questions[i - 1].answer){
+      score++;
+    }
+    total++;
+  }
+  
+  let pass_or_fail = "passed!";
+  if(score < 7){
+    pass_or_fail = "failed.";
+  }
+
+  const toReturn = { summary: pass_or_fail, 
+                     score: score,
+                     total: total };
+
+  res.send(toReturn)
 })
 
 
