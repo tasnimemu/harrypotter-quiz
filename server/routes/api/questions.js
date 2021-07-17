@@ -1,31 +1,12 @@
-/**
- * This is where you will create routes for our
- * questions API
- * Base url: /api/questions
- * We have imported express and router and
- * exported the router. 
- * 
- * Your task is to fill in the router with appropriate
- * routes and implement the functionality of getting
- * data from mongodb and return appropriate results
- */
-
 const express = require('express');
 const router = express.Router();
 
 // Question Data
 const Questions = require('../../models/questions-data.json')
-// Hint: get a bonus task here
-const shuffleArray = require('../../utils/shuffle');
-
 
 /**
- * Route details
  * api GET /api/questions
- * Description: Get all questions in the database
- * IMPORTANT: remove the answers from it's data
- * we don't want the client to know the answer.
- * 
+ * Description: Get all questions in the database (leave answers out)
  * Structure of the return JSON:
  * [
  *    {
@@ -52,10 +33,10 @@ router.get('/', (req, res) => {
 })
 
 /**
- * Route details
  * api GET /api/questions/count
- * Description: This will get the count of the questions
- * from the database and return it 
+ * Description: Gets the count of the questions
+ * from the database and returns it 
+ * 
  * Structure of the return JSON:
  * {
  *  count: 4
@@ -66,9 +47,8 @@ router.get('/count', (req, res) => {
 })
 
 /**
- * Route details
  * api GET /api/questions/:qId
- * Description: This will get one question given the question ID
+ * Description: Get one question given the question ID
  * Structure of the return JSON:
  * {
  *    question: 'sample question',
@@ -94,12 +74,10 @@ router.get('/:qId', (req, res) => {
 
 
 /**
- * Route details
  * api POST /api/questions/result
- * Description: This will receive a body with user
- * entered answers and will return the results. 
- * Calculation of the result will happen here and you
- * would only send the results.
+ * Description: Receives a body with user
+ * entered answers and returns the results. 
+ * Calculation of the result will happens here
  * 
  * Structure of body JSON:
  * {
